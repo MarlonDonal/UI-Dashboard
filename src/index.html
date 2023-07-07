@@ -106,14 +106,12 @@
 
         <div class="flex gap-12 items-center px-6 mb-6">
           <h1 class="text-[2rem]">Dashboard</h1>
-          <div
-            class="relative outline-none active:outline-none items-center rounded"
-          >
+          <div class="relative items-center rounded">
             <input
               type="date"
               name=""
               id=""
-              class="border-none oultine-none bg-transparent appearance-none"
+              class="border-none outline-none bg-transparent appearance-none"
             />
             <i class="icon absolute right-2 translate-y-2 pointer-events-none"
               >&#xe70d;</i
@@ -244,19 +242,39 @@
             <div class="rounded-lg bg-[rgba(37,44,71,1)]">
               <h1 class="text-md p-4">Top Selling Products</h1>
               <ul class="flex flex-col gap-4 p-4">
-                <li class="flex bg-red-500 gap-6">
-                  <span class="w-96">Product Name</span>
-                  <span>Date Time</span>
-                  <span>Price</span>
-                  <span>Quantity</span>
-                  <span>Amount</span>
+                <li
+                  class="flex gap-6 bg-[rgba(255,255,255,0.1)] cursor-pointer select-none"
+                >
+                  <label for="product-name">
+                    <input type="radio" name="btn-vue" id="product-name" />
+                    <span
+                      class="w-1/5 p-4 text-center bg-red-500 rounded border-green-300"
+                      >Product Name</span
+                    >
+                  </label>
+                  <label for="date-time">
+                    <input type="radio" name="btn-vue" id="date-time" />
+                    <span class="w-1/5 p-4 text-center">Date Time</span>
+                  </label>
+                  <label for="price">
+                    <input type="radio" name="btn-vue" id="price" />
+                    <span class="w-1/5 p-4 text-center">Price</span>
+                  </label>
+                  <label for="qunatity">
+                    <input type="radio" name="btn-vue" id="qunatity" />
+                    <span class="w-1/5 p-4 text-center">Quantity</span>
+                  </label>
+                  <label for="amount">
+                    <input type="radio" name="btn-vue" id="amount" />
+                    <span class="w-1/5 p-4 text-center">Amount</span>
+                  </label>
                 </li>
-                <li>
-                  <span>Pocket Drone 2.4G</span>
-                  <span>07/29/23</span>
-                  <span>$178.34</span>
-                  <span>32</span>
-                  <span>$1023.44</span>
+                <li class="flex gap-6 p-2">
+                  <span class="w-1/5 p-4 text-center">Pocket Drone 2.4G</span>
+                  <span class="w-1/5 p-4 text-center">07/29/23</span>
+                  <span class="w-1/4 p-4 text-center">$178.34</span>
+                  <span class="w-1/5 p-4 text-center">32</span>
+                  <span class="w-1/5 p-4 text-center">$1023.44</span>
                 </li>
                 <li>
                   <span>Marco LIghtWeight Shirt</span>
@@ -286,7 +304,7 @@
                   <span>12</span>
                   <span>$2639.88</span>
                 </li>
-              </ulcla>
+              </ul>
             </div>
           </footer>
         </div>
